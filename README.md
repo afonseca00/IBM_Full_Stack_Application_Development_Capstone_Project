@@ -128,5 +128,6 @@ The solution architecture consists of the following components:
 
 - Open a web browser and go to:
 
-plaintext
-https://alexandrefro-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/
+   ```bash
+   https://alexandrefro-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/
+   ```
