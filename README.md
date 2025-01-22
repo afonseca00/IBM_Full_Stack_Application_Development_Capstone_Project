@@ -68,4 +68,65 @@ The solution architecture consists of the following components:
 
    ```bash
    git clone https://github.com/afonseca00/IBM_Full_Stack_Application_Development_Capstone_Project.git
-   cd fullstack_developer_capstone
+   cd IBM_Full_Stack_Application_Development_Capstone_Project
+```
+
+2. **Backend service with Express-MongoDB**:
+
+- Open a terminal and navigate to the database directory:
+
+   ```bash
+   cd server/database
+   ```
+
+- Build the Docker image for nodeapp:
+   ```bash
+   docker build . -t nodeapp
+   ```
+
+- Start the Docker Compose:
+
+   ```bash
+   docker-compose up
+   ```
+
+3. **Front-end service**:
+
+- Open another terminal and navigate to the server directory:
+
+   ```bash
+   cd server
+   ```
+
+- Install virtualenv if not already installed:
+
+   ```bash
+   pip install virtualenv
+   ```
+
+- Create and activate a virtual environment:
+
+   ```bash
+   virtualenv djangoenv
+   source djangoenv/bin/activate  # On Windows: .\djangoenv\Scripts\activate
+   ```
+
+- Install the required Python packages:
+
+   ```bash
+   python3 -m pip install -U -r requirements.txt
+   ```
+
+- Run migrations to set up the database:
+
+   ```bash
+   python3 manage.py makemigrations
+   python3 manage.py migrate
+   ```
+
+4. **Access the Application**:
+
+- Open a web browser and go to:
+
+plaintext
+https://alexandrefro-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/
